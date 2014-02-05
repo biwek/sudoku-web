@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -7,7 +8,7 @@
 	<body>
 	<h1>-Sudoku-</h1>
 		<div id="sudoku">
-			<% 3.times do |box|%>
+			<% 3.times do |row|%>
 				<div class='row'>				
 					<% 3.times do |box|%>
 						<div class='box'>
@@ -17,7 +18,9 @@
 
 									<% 3.times do |cell| %>
 										<div class='cell'>
-											<input type='text' maxlength='1' autocomplete='off'>
+											<% cell_index = row * 27 + box * 3 + cell_row * 9 + cell %>
+											<% cell_value = @current_solution[cell_index] %>
+											<input type='text' maxlength='1' autocomplete='off' value="<%=cell_value%>">
 										</div>
 									<% end %>
 								</div>
@@ -30,6 +33,6 @@
 	</body>
 
 	<footer>
-		
+		© 2014 sudoku
 	</footer>
 </html>

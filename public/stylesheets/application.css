@@ -14,4 +14,11 @@ div.box, div.cell {
 .cell input {
 	width: 30px;
 	height: 30px;
+	font-size: 15px;
+	text-align: center;
+}
+
+footer {
+	bottom: 0;
+	margin: 2em;
 }
