@@ -1,0 +1,17 @@
+body {
+	text-align: center;
+}
+
+#sudoku {
+	font-size: 0;
+	text-align: center;
+}
+
+div.box, div.cell {
+	display: inline-block;
+}
+
+.cell input {
+	width: 30px;
+	height: 30px;
+}
