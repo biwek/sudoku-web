@@ -7,6 +7,10 @@ body {
 	text-align: center;
 }
 
+.box {
+	border: 1px solid black;
+}
+
 div.box, div.cell {
 	display: inline-block;
 }
