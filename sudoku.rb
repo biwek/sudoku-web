@@ -1,6 +1,9 @@
 require 'sinatra'
 require_relative './lib/sudoku'
 require_relative './lib/cell'
+configure :production do 
+	require 'newrelic_rpm'
+end
 
 enable :sessions
 
