@@ -11,6 +11,7 @@ end
 enable :sessions
 set :partial_template_engine, :erb
 use Rack::Flash 
+set :session_secret, "This is the secret key"
 
 def random_sudoku 
 	seed = (1..9).to_a.shuffle + Array.new(81-9, 0)
