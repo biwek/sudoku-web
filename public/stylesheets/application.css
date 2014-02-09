@@ -30,6 +30,11 @@ div.box, div.cell {
 	background-color: #DDD;
 }
 
+#flash {
+	margin: 20px;
+	color: maroon;
+}
+
 footer {
 	bottom: 0;
 	margin: 2em;
